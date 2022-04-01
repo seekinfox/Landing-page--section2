@@ -1,0 +1,372 @@
+@use "../Styles/mixins" as m;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(90deg, #003378 0%, #05104B 100%);
+  color:white;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+header {
+  overflow: hidden;
+  display: flex;
+  padding: 1rem;
+  > img {
+    width: 8rem;
+    margin-left: auto;
+    @include m.desktop {
+      width: 10rem;
+    }
+  }
+}
+.main__section {
+  @include m.desktop {
+    padding: 0 5rem;
+  }
+  @include m.tablet {
+    padding: 0 10rem;
+  }
+}
+
+//article one
+.one {
+  width: 100%;
+  @include m.fcr;
+  @include m.cc;
+  @include m.desktop {
+    @include m.frr;
+    margin-bottom: 20rem;
+  } 
+  @include m.tablet {
+    margin-bottom: 10rem;
+  }
+  > div {
+    &:nth-of-type(1){
+      position: relative;
+      width: 50%;
+      > img {
+        width: 100%;
+      }
+      @include m.desktop {
+        width: 100%;
+      }
+     
+    }
+
+
+    &:nth-of-type(2){
+      padding:0 3rem 3rem;
+      > h2 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+      p {
+        background: linear-gradient(90deg, #FFFFFF 0%, #2F7FEB 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+        line-height: 1.5;
+        font-size: 1.5rem;
+      }
+
+      @include m.desktop {
+        text-align: left;
+        padding-left: 10%;
+        > h2 {
+          font-size: 3.9rem;
+        }
+        p {
+          font-size: 3rem;
+        }
+      }
+      @include m.tablet {
+        text-align: left;
+        padding-left: 10%;
+        margin-bottom: 2rem;
+        > h2 {
+          font-size: 3.3rem;
+        }
+        p {
+          font-size: 2.3rem;
+        }
+      }
+
+    }
+  }
+}
+
+.image__content {
+  @include m.fr;
+  @include m.cc;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  position: absolute;
+  > div {
+    height: 100%;
+    @include m.fc;
+    justify-content: space-evenly;
+  }
+}
+
+.part1 {
+  @include m.fc;
+  @include m.cc;
+  flex-shrink: 10;
+  > img {
+    width: 12%;
+    &:nth-of-type(1){
+      width: 130%;
+      margin-bottom: -4rem;
+    }
+    &:nth-of-type(2){
+      margin-bottom: 3rem;
+    }
+  }
+  @include m.desktop {
+    > img {
+      width: 9%;
+      &:nth-of-type(1){
+        margin-bottom: -10rem;
+      }
+      &:nth-of-type(2){
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  @include m.tablet {
+    > img {
+      width: 7%;
+      &:nth-of-type(1){
+        margin-bottom: -7rem;
+      }
+      &:nth-of-type(2){
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+
+.part2 {
+  flex-shrink: 3;
+  >p {
+    padding-left: 2rem;
+    text-align: left;
+    @include m.fc;
+
+    > span {
+      font-weight: bold;
+      &:nth-of-type(1){
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      &:nth-of-type(2){
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @include m.desktop {
+    flex-shrink: 5;
+  
+    >p {
+      > span {
+        &:nth-of-type(1){
+          font-size: 4rem;
+        }
+        &:nth-of-type(2){
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  @include m.tablet {
+    flex-shrink: 5;
+  
+    >p {
+      > span {
+        &:nth-of-type(1){
+          font-size: 3.3rem;
+        }
+        &:nth-of-type(2){
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+//article 2
+.two {
+  margin-top: 2rem;
+  @include m.fc;
+  @include m.cc;
+  position: relative;
+  @include m.desktop {
+    @include m.fr;
+    margin-bottom: 20rem;
+  } 
+  @include m.tablet {
+    margin-bottom: 10rem;
+  }
+  .two__part1 {
+    @include m.fr;
+    @include m.cc;
+    > img {
+      width: 70%;
+    }
+  }
+  .two__part2 {
+    text-align: center;
+    padding: 3rem;
+    position: relative;
+
+    > span {
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    > h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    } 
+    p {
+      opacity: .67;
+      line-height: 1.5;
+      font-size: 1.5rem;
+    }
+  }
+  @include m.desktop {
+    .two__part1 {
+      flex-basis: 70%;
+      > img {
+        width: 90%;
+      }
+    }
+    .two__part2 {
+      flex-basis: 100%;
+      text-align: left;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      > span {
+        font-size: 2.9rem;
+      } 
+      > h2 {
+        font-size: 3.9rem;
+      } 
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+  @include m.tablet {
+    .two__part1 {
+      width: 100%;
+      margin-bottom: 2rem;
+      > img {
+        width: 80%;
+      }
+    }
+    .two__part2 {
+      text-align: left;
+
+      > span {
+        font-size: 2.9rem;
+      } 
+      > h2 {
+        font-size: 3.3rem;
+      } 
+      p {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+.span0 {
+  color: #FF6392;
+}
+.span1, .span4 {
+  color: #FFBF5F;
+}
+.span2, .span5 {
+  color:#4EFFBF;
+}
+.span3 {
+  color: #618DFF;
+}
+
+.pattern0 {
+  position: absolute;
+  bottom: -5rem;
+  left:0;
+  width: 100%;
+  > img {
+    width: 100%;
+  }
+  @include m.desktop {
+    left: -18%;
+    bottom: -90%;
+    > img {
+      width: 50%;
+    }
+  }
+  @include m.tablet {
+    left: -20%;
+    bottom: -30%;
+    > img {
+      width: 80%;
+    }
+  }
+}
+.pattern1 {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  > img {
+    width: 100%;
+  }
+  @include m.desktop {
+    left: 10%;
+    bottom: -70%;
+    > img {
+      width: 70%;
+    }
+  }
+  @include m.tablet {
+    left: 30%;
+    bottom: -50%;
+    > img {
+      width: 80%;
+    }
+  }
+}
+
+.two1 {
+  @include m.desktop {
+    @include m.frr;
+  }
+}
+.two3 {
+  @include m.desktop {
+    @include m.frr;
+  }
+}
+.two5 {
+  @include m.desktop {
+    @include m.frr;
+  }
+}
