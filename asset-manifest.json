@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Landing-page--section2/static/css/main.3e1458cb.css",
+    "main.js": "/Landing-page--section2/static/js/main.0ab1561e.js",
+    "static/media/Development Illustration3.png": "/Landing-page--section2/static/media/Development Illustration3.353708e682336b12ee93.png",
+    "static/media/How We Work Illustration.png": "/Landing-page--section2/static/media/How We Work Illustration.f38119ff2da70c5ab2c3.png",
+    "static/media/Neon2.png": "/Landing-page--section2/static/media/Neon2.8470770442ed05169775.png",
+    "static/media/Neon1.png": "/Landing-page--section2/static/media/Neon1.339cd605f28d50fbb87a.png",
+    "static/media/2digitak.png": "/Landing-page--section2/static/media/2digitak.32510c19a86777558f93.png",
+    "static/media/Ellipse7.png": "/Landing-page--section2/static/media/Ellipse7.b079395e46b325fe34f6.png",
+    "static/media/Maintenance Illustration2png.png": "/Landing-page--section2/static/media/Maintenance Illustration2png.84fb69fa287f7bf4b5cb.png",
+    "static/media/UI Design Illustration1.png": "/Landing-page--section2/static/media/UI Design Illustration1.3914625ed30d8e57a897.png",
+    "static/media/Discuss Illustration5.png": "/Landing-page--section2/static/media/Discuss Illustration5.3e5dc7a5f36596329885.png",
+    "static/media/Glass.png": "/Landing-page--section2/static/media/Glass.75d8950effa8a67da9b0.png",
+    "index.html": "/Landing-page--section2/index.html",
+    "main.3e1458cb.css.map": "/Landing-page--section2/static/css/main.3e1458cb.css.map",
+    "main.0ab1561e.js.map": "/Landing-page--section2/static/js/main.0ab1561e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e1458cb.css",
+    "static/js/main.0ab1561e.js"
+  ]
+}
